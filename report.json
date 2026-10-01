@@ -1,0 +1,134 @@
+{
+  "count_by_status": {
+    "departed": 9,
+    "enroute": 15,
+    "delayed": 7,
+    "arrived": 12
+  },
+  "delayed": [
+    {
+      "shipment_id": "SHP-10401",
+      "reason_code": "WEATHER",
+      "status_time": "2026-09-24T16:05:00+00:00"
+    },
+    {
+      "shipment_id": "SHP-10410",
+      "reason_code": "WEATHER",
+      "status_time": "2026-09-23T08:25:00+00:00"
+    },
+    {
+      "shipment_id": "SHP-10412",
+      "reason_code": "WEATHER",
+      "status_time": "2026-09-24T10:30:00+00:00"
+    },
+    {
+      "shipment_id": "SHP-10416",
+      "reason_code": "TRAFFIC",
+      "status_time": "2026-09-22T17:50:00+00:00"
+    },
+    {
+      "shipment_id": "SHP-10422",
+      "reason_code": "MECHANICAL",
+      "status_time": "2026-09-24T04:10:00+00:00"
+    },
+    {
+      "shipment_id": "SHP-10438",
+      "reason_code": "MECHANICAL",
+      "status_time": "2026-09-23T20:10:00+00:00"
+    },
+    {
+      "shipment_id": "SHP-10443",
+      "reason_code": "SHIPPER_DELAY",
+      "status_time": "2026-09-23T21:30:00+00:00"
+    }
+  ],
+  "weight_not_arrived": 754865.42,
+  "rejected": [
+    {
+      "raw": {
+        "shipment_id": "",
+        "carrier_number": "PRO-449361",
+        "status": "arrived",
+        "status_time": "2026-09-24T23:10:00Z",
+        "origin": {
+          "city": "Dallas",
+          "state": "TX"
+        },
+        "destination": {
+          "city": "Des Moines",
+          "state": "IA"
+        },
+        "total_weight": "29460",
+        "reason": null
+      },
+      "problems": [
+        "shipment_id is missing"
+      ]
+    },
+    {
+      "raw": {
+        "shipment_id": "SHP-10415",
+        "carrier_number": "PRO-457425",
+        "status": "lost",
+        "status_time": "2026-09-24T03:15:00Z",
+        "origin": {
+          "city": "Atlanta",
+          "state": "GA"
+        },
+        "destination": {
+          "city": "Birmingham",
+          "state": "AL"
+        },
+        "total_weight": "34335.6",
+        "reason": null
+      },
+      "problems": [
+        "status 'lost' is not one of departed, enroute, delayed, arrived"
+      ]
+    },
+    {
+      "raw": {
+        "shipment_id": "SHP-10434",
+        "carrier_number": "PRO-799502",
+        "status": "enroute",
+        "status_time": "2026-09-23T17:20:00Z",
+        "origin": {
+          "city": "Des Moines",
+          "state": "IA"
+        },
+        "destination": {
+          "city": "Columbus",
+          "state": "OH"
+        },
+        "total_weight": "N/A",
+        "reason": null
+      },
+      "problems": [
+        "total_weight 'N/A' is not a number"
+      ]
+    },
+    {
+      "raw": {
+        "shipment_id": "SHP-10444",
+        "carrier_number": "PRO-499925",
+        "status": "delayed",
+        "status_time": "",
+        "origin": {
+          "city": "Lexington",
+          "state": "KY"
+        },
+        "destination": {
+          "city": "Chicago",
+          "state": "IL"
+        },
+        "total_weight": "5559",
+        "reason": {
+          "code": "TRAFFIC"
+        }
+      },
+      "problems": [
+        "status_time '' is not an ISO 8601 date-time"
+      ]
+    }
+  ]
+}

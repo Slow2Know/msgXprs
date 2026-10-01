@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ShipmentReport.Cli/ShipmentReport.Cli.csproj" />
+    <Project Path="src/ShipmentReport.Core/ShipmentReport.Core.csproj" />
+  </Folder>
+</Solution>
